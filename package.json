@@ -1,0 +1,25 @@
+{
+  "name": "software2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorgeLopez18/software2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorgeLopez18/software2/issues"
+  },
+  "homepage": "https://github.com/JorgeLopez18/software2#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1",
+    "mongooses": "^1.0.0"
+  }
+}
