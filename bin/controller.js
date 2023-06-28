@@ -1,5 +1,10 @@
 const mongoose = require("mongoose");
 const User = require("./models/users");
+const Actividades = require("./models/actividades")
+const Contenidos = require("./models/contenidos")
+const Notas = require("./models/notas")
+const TipoUser = require ("./models/tipouser")
+
 
 class controller{
     constructor(){
@@ -30,7 +35,42 @@ try{
       }
     }
     
-      
+    async getActividades(res) {
+      try {
+        const actividades = await Actividades.find({}).exec();
+        res.send(actividades);
+      } catch (err) {
+        throw err;
+      }
+    }
+    
+    async getContenidos(res) {
+      try {
+        const contenidos = await Contenidos.find({}).exec();
+        res.send(contenidos);
+      } catch (err) {
+        throw err;
+      }
+    }
+
+    async getNotas(res) {
+      try {
+        const notas = await Notas.find({}).exec();
+        res.send(notas);
+      } catch (err) {
+        throw err;
+      }
+    }
+
+    async getTipoUser(res) {
+      try {
+        const tipouser = await TipoUser.find({}).exec();
+        res.send(tipouser);
+      } catch (err) {
+        throw err;
+      }
+    }
+    
 }
 
 exports.controller = new controller();

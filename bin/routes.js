@@ -17,4 +17,27 @@ app.get("/users",(req, res)=>{
    controller.getUsers(res);
 })
 
+
+app.get("/actividades",(req, res)=>{
+    
+     controller.getActividades(res);
+  })
+
+
+  app.get("/contenidos",(req, res)=>{
+    
+    controller.getContenidos(res);
+ })
+
+
+ app.get("/notas",(req, res)=>{
+    
+    controller.getNotas(res);
+ })
+
+
+ app.get("/tipouser",(req, res)=>{
+    
+    controller.getTipoUser(res);
+ })
 exports.app = app;
