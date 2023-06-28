@@ -3,7 +3,7 @@ const User = require("./models/users");
 const Actividades = require("./models/actividades")
 const Contenidos = require("./models/contenidos")
 const Notas = require("./models/notas")
-const TipoUser = require ("./models/tipouser")
+const TipoUsuarios = require("./models/tipousuarios")
 
 
 class controller{
@@ -61,11 +61,11 @@ try{
         throw err;
       }
     }
-
-    async getTipoUser(res) {
+    
+    async getTipoUsuarios(res) {
       try {
-        const tipouser = await TipoUser.find({}).exec();
-        res.send(tipouser);
+        const tipousuarios = await TipoUsuarios.find({}).exec();
+        res.send(tipousuarios);
       } catch (err) {
         throw err;
       }

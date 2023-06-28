@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const TipoUserSchema = new Schema({
+const TipoUsuariosSchema = new Schema({
     nickname: String,
     password: String,
     picture: String
 });
 
-var TipoUser = mongoose.model("TipoUser", TipoUserSchema);
+var TipoUsuarios = mongoose.model("tipousuarios", TipoUsuariosSchema);
 
-module.exports = TipoUser;
+module.exports = TipoUsuarios;

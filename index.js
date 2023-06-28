@@ -1,4 +1,4 @@
-const routes = require("./bin/routes");
+const  routes  = require("./bin/routes");
 const { app } = require("./bin/routes");
 
 
