@@ -20,18 +20,16 @@ try{
         console.error(e)
 }
     }
-
-  async  getUsers(res) {
-      
-   
-    User.find({}, (err, users) => {
-          if (err) {
-            throw err;
-          }
     
-          res.send(users);
-        });
+    async getUsers(res) {
+      try {
+        const users = await User.find({}).exec();
+        res.send(users);
+      } catch (err) {
+        throw err;
       }
+    }
+    
       
 }
 
