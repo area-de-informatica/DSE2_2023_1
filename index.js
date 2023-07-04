@@ -1,11 +1,6 @@
-const  routes  = require("./bin/routes");
-const { app } = require("./bin/routes");
-
+const  routes  = require("./src/bin/routes");
+const { app } = require("./src/bin/routes");
 
 app.listen(3030,()=>{
-console.log("servidor on!");
+console.log("servidor on! port http://localhost:3030");
 });
-
-// esto es una prueba a ver si esta en linea
-
-// prueba 2

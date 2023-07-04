@@ -2,9 +2,12 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ActividadesSchema = new Schema({
-    nickname: String,
-    password: String,
-    picture: String
+    nombre: String,
+    calificacion:  {
+        type: Number,
+        min: 0,
+        max: 5
+      }
 });
 
 var Actividades = mongoose.model("Actividades", ActividadesSchema);
