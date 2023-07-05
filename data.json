@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1, "nombre": "Juan", "apellido": "Perez", "edad": 30, "fechaNacimiento": "1989-01-01", "sexo": "M"
+    },
+    {
+        "id": 2, "nombre": "Maria", "apellido": "Gomez", "edad": 25, "fechaNacimiento": "1994-01-01", "sexo": "F"
+    },
+    {
+        "id": 3, "nombre": "Pedro", "apellido": "Gonzalez", "edad": 35, "fechaNacimiento": "1984-01-01", "sexo": "M"
+    }
+]
